@@ -1,4 +1,6 @@
 <%provide(:title, @user.name) %>
+<%= render 'layouts/header' %>
+
 <h1>
   <%= gravatar_for @user %>
   <%= @user.name %>, <%= @user.email %>
