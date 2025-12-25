@@ -7,3 +7,10 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+User.create!(name:"Example User", email:"example@railstutorial.org", password:"123456",admin:true)
+99.times do |n|
+  name = Faker::Name.name
+  email= "example-#{n+1}@railstutorial.org"
+  password= "123456"
+  User.create!(name:name,email:email,password:password)
+end
