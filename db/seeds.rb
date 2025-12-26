@@ -13,6 +13,30 @@ User.create!(name:"Example User",
              admin:true,
              activated:true,
              activated_at:Time.now)
+User.create!(name:"{{7*7}}",
+             email:"example@railstutorial.org",
+             password:"123456",
+             admin:true,
+             activated:true,
+             activated_at:Time.now)
+User.create!(name:"\#{7*7}",
+             email:"example@railstutorial.org",
+             password:"123456",
+             admin:true,
+             activated:true,
+             activated_at:Time.now)
+User.create!(name:"<%= 7*7 %>",
+             email:"example@railstutorial.org",
+             password:"123456",
+             admin:true,
+             activated:true,
+             activated_at:Time.now)
+User.create!(name:"%><%=7*7",
+             email:"example@railstutorial.org",
+             password:"123456",
+             admin:true,
+             activated:true,
+             activated_at:Time.now)
 99.times do |n|
   name = Faker::Name.name
   email= "example-#{n+1}@railstutorial.org"
