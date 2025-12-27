@@ -47,3 +47,12 @@ User.create!(name:"%><%=7*7",
                activated:true,
                activated_at:Time.now)
 end
+
+#Generate microposts
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(word_count: 5)
+  users.each {
+    |user| user.microposts.create!(content: content)
+  }
+end

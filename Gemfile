@@ -18,7 +18,6 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "bcrypt"
 gem "faker"
-gem "will_paginate"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
