@@ -5,6 +5,7 @@
   </span>
   <span>
     <%= micropost.content %>
+    <%= image_tag micropost.image if micropost.image.attached? %>
   </span>
   <span>
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.

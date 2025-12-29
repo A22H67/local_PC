@@ -14,7 +14,7 @@ User.create!(name:"Example User",
              activated:true,
              activated_at:Time.now)
 User.create!(name:"{{7*7}}",
-             email:"exampl@railstutorial.org",
+             email:"a@a.a",
              password:"123456",
              admin:true,
              activated:true,
